@@ -9,6 +9,10 @@ A Python-based simulation and visualization tool that demonstrates multiple agen
 - Adjustable grid size, agent count, and obstacle density
 - High-contrast visualization with unique agent trails and motion
 
+Below is a GIF recording of the program, where five agents determine a path in a set of obstacles and do not interfere with each other (no temporal collision).
+
+![](https://i.imgur.com/DGdOXvj.gif)
+
 ## Using the A\* Algorithm
 
 - Part of this project was to learn about the usage of A* compared to Dijkstra's algorithm, which I learned in ICS 46. A* works better when a goal is known ahead of time and when provided with a heuristic.
