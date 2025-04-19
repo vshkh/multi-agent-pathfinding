@@ -1,5 +1,7 @@
 import heapq
 
+# Implements A* for pathfinding, using the Manhattan search heuristic to guide the search.
+
 def a_star(grid, start, goal):
     open_set = []
     heapq.heappush(open_set, (0 + heuristic(start, goal), 0, start, []))

@@ -8,3 +8,29 @@ A Python-based simulation and visualization tool that demonstrates multiple agen
 - Real-time animation using Matplotlib
 - Adjustable grid size, agent count, and obstacle density
 - High-contrast visualization with unique agent trails and motion
+
+## Using the A\* Algorithm
+
+- Part of this project was to learn about the usage of A* compared to Dijkstra's algorithm, which I learned in ICS 46. A* works better when a goal is known ahead of time and when provided with a heuristic.
+- It explores toward a goal (when there is a goal) and doesn't expand throughout nodes as much.
+- Heuristics can be using the Manhattan distance, which is used here as its usage is best for grids, but can also use Euclidean distance, weighted heuristics, or even none. Often, its domain-specific relevant to the logic.
+- To find the shortest path from start to goal, it uses:
+
+1. An actual cost to reach a node (given that this is used on weighted graphs)
+2. A heuristic estimate of the cost, which here the heusristic as mentioned is the Manhattan distance formula.
+
+## Steps to the A\* Algorithm
+
+1. It's important to initialize a priority queue of nodes to explore, as well as maintain a list of nodes already visited.
+2. Pop nodes with the lowest cost from the open list and check if its the goal.
+3. If yes, return the path.
+4. Otherwise, for each neighbor find the cost and heuristic estimates of the neighbors to the goals.
+5. Either the goal can be reached or if the open list is empty and the goal has not been reached, there exists no path.
+
+## A\* with Reservations
+
+- A\* is a very powerful algorithm in a simple use case like this, but for multi-agent coordination, we want to modify the algorithm so that collision isn't to happen.
+- In this particular project where environments are randomly generated, we want agents to not temporally collide. Paths can overlap, often times there is very minimal paths so overlap is okay, but at the same time is not.
+- Therefore, A\* reserves tiles at a given time using a **reservation table**, where nodes have both position and times.
+- Apart of the cost, now time is a consideration and the agent can stay to avoid a collision.
+- Therefore, we're keeping track of both posiiton and time, as well as checking for overlapping times apart of our availabilities.

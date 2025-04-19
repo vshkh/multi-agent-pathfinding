@@ -12,11 +12,11 @@ def animate_agents(grid, agents):
     color_list = [
         "#000000",  # 0 - free space (black)
         "#808080",  # 1 - obstacle (white)
-        "#8dd3c7",  # 2 - agent 0 trail
-        "#ffffb3",  # 3 - agent 1 trail
-        "#bebada",  # 4 - agent 2 trail
-        "#fb8072",  # 5 - agent 3 trail
-        "#80b1d3",  # 6 - agent 4 trail
+        "#ffaaaa",  # 2 - agent 0 trail -- faint red
+        "#cdffaa",  # 3 - agent 1 trail -- faint green
+        "#aac8ff",  # 4 - agent 2 trail -- faint blue
+        "#fffcaa",  # 5 - agent 3 trail -- faint yellow
+        "#e3aaff",  # 6 - agent 4 trail -- faint purple
         "#fdb462",  # 7 - ...
         "#b3de69",
         "#fccde5",
@@ -25,7 +25,7 @@ def animate_agents(grid, agents):
         "#00ff00",  # 11 - agent 1 current (bright green)
         "#0000ff",  # 12 - agent 2 current (bright blue)
         "#ffff00",  # 13 - agent 3 current (bright yellow)
-        "#00ffff",  # 14 - agent 4 current (bright cyan)
+        "#ab00ff",  # 14 - agent 4 current (bright purple)
     ]
     cmap = ListedColormap(color_list)
 
