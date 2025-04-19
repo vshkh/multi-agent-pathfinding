@@ -1,6 +1,6 @@
 # Multi-Agent Pathfinding Simulator
 
-A Python-based simulation and visualization tool that demonstrates multiple agents navigating a 2D grid using A\* search and conflict resolution. The agents move in real time with animated paths, avoiding collisions and navigating around obstacles.
+A Python-based simulation and visualization tool that demonstrates multiple agents navigating a 2D grid using A\* search and conflict resolution. The agents move in real time with animated paths, avoiding collisions and navigating around obstacles. Though it was worked on before, I uploaed the project and revised code with comments and explanation.
 
 ## Features
 
