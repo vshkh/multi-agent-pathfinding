@@ -2,6 +2,8 @@
 
 A Python-based simulation and visualization tool that demonstrates multiple agents navigating a 2D grid using A\* search and conflict resolution. The agents move in real time with animated paths, avoiding collisions and navigating around obstacles. Though it was worked on before, I uploaed the project and revised code with comments and explanation.
 
+I acknowledge the use of AI in assistance to make the code far less error prone and to develop error handling, but I take responsibility in planning and research toward the algorithms, writing majority of the preliminary code before extensive error handling was implemented.
+
 ## Features
 
 - Multi-agent path planning with A\* and reservation-based conflict avoidance
